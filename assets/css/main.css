@@ -159,14 +159,14 @@ input, select, textarea {
 		color: inherit;
 	}
 
-	/* h2, h3, h4, h5, h6 {
-		font-weight: 700;
-	} */
+	h2, h3, h4, h5, h6 {
+		font-weight: 500;
+	}
 
 	h1 {
 		font-size: 3.25em;
 		letter-spacing: -0.025em;
-		font-weight: 300;
+		font-weight: 500;
 	}
 
 		h1 strong {
@@ -2253,7 +2253,7 @@ input, select, textarea {
 			}
 
 			h1, h2, h3, h4, h5, h6 {
-				font-size: 1.25em;
+				font-size: 2em;
 				margin: 0 0 0.4em 0;
 			}
 
@@ -2416,7 +2416,7 @@ input, select, textarea {
 				}
 
 				#top p {
-					font-size: 1em;
+					font-size: 1.25em;
 				}
 
 			#contact footer {
