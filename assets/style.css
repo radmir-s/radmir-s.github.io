@@ -1,0 +1,317 @@
+@import url("https://fonts.googleapis.com/css?family=Inconsolata:100,200,300,400,500,600,700,900");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,900");
+@import url("https://use.fontawesome.com/releases/v5.15.3/css/all.css");
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    /* font-family: Montserrat, Inconsolata, monospace, sans-serif;; */
+    font-family: Inconsolata;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.4;
+    color: #000000;
+}
+
+a {
+    text-decoration: underline;
+    color: inherit;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none; 
+}
+
+
+a:hover {
+    color: #E71738;
+}
+
+nav {
+    background-color: #41414b;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+nav .name {
+    margin-left: 30px;
+    font-weight: 500;
+    color: white;
+    font-size: 28px;
+}
+
+.menu ul {
+    padding-right: 20px;
+}
+
+.menu li {
+    display: inline-block;
+    padding: 5px;
+    /* margin: 5px; */
+    margin-right: 20px;
+}
+
+.menu li a {
+    color: white;
+}
+
+.menu li a:hover {
+    font-weight: 500;
+}
+
+.social {
+    padding-top: 5px;
+    text-align: center;
+}
+
+.social a {
+    text-decoration: none;
+    font-size: 26px;
+    color: white;
+    background-color: #41414b;
+    border-radius: 100%;
+    padding: 9px;
+    margin-right: 15px;
+    border: 0;
+}
+
+.social a:hover {
+    font-size: white;
+}
+
+.social a.fa-github {
+    position: relative;
+    top: 4px;
+    font-size: 38px;
+    padding: 3px;
+}
+
+/* Layout */
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+/* Props */
+.dhead {
+    margin-top: 20px;
+}
+
+.dpic {
+    grid-column: span 1;
+    text-align: left;
+}
+
+.bio {
+    padding: 10px;
+    /* padding-left: 10px; */
+    grid-column: span 11;
+}
+
+@media (max-width: 991px) {
+    .dpic {
+        grid-column: span 12;
+        text-align: center;
+    }
+
+    .bio {
+        grid-column: span 12;
+        padding-top: 15px;
+        text-align: center;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+}
+
+.bio h1 {
+    font-size: 28px;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+}
+
+.bio h2 {
+    font-weight: normal;
+    /* font-style: italic; */
+    color: #41414b;
+    font-size: 18px;
+    padding: 0;
+    margin: 5px 0 10px 0;
+}
+
+@media (min-width: 992px) {
+    .bio h2 {
+        max-width: 800px;
+    }
+}
+
+.dpic img {
+    width: 200px;
+    height: 200px;
+    border-radius: 35px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+hr {
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    padding: 0;
+    margin: 10px 0px 10px 0px;
+    border: 0;
+}
+
+hr.thick{
+    margin: 25px 0px 25px 0px;
+}
+
+.ico {
+    grid-column: span 1;
+    vertical-align: top;
+    position: relative;
+}
+
+.ico img {
+    /* border-radius: 5px; */
+    /* height: 60px; */
+    width: 80%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.desc {
+    grid-column: span 9;
+    vertical-align: top;
+    font-size: 17px;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.timespan {
+    grid-column: span 2;
+    /* font-size: 14px; */
+    text-align: right;
+    padding-top: 5px;
+    padding-right: 10px;
+    /* color: #6b5b5b; */
+}
+
+.hassets {
+    position: relative;
+}
+
+@media (max-width: 991px) {
+    .hassets {
+        display: none;
+    }
+}
+
+.hasset {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+}
+
+.stitle {
+    font-size: 26px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+.card {
+    grid-column: span 3;
+    vertical-align: top;
+    background-color: #eee;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 5px;
+    background-color: white;
+    padding-bottom: 10px;
+}
+
+@media (max-width: 991px) {
+    .card {
+        grid-column: span 6;
+    }
+}
+
+.card img {
+    border-radius: 5px;
+    width: 100%;
+}
+
+.cdesc {
+    height: 30px;
+    vertical-align: top;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+@media (max-width: 768px) {
+    .cdesc {
+        font-size: 14px;
+        padding-bottom: 10px;
+    }
+}
+
+.desc h3{
+    font-weight: 400;
+    margin: 0;
+}
+.desc h3 strong{
+    font-weight: 500;
+}
+
+
+.vitae .desc ul{
+    margin: 5px 0 5px 0;
+    font-weight: 300;
+    font-size: 16px;
+    padding-left: 20px;
+    list-style: disc;
+}
+
+.ico img{
+    border-radius: 25%;
+}
+
+.vitae .container {
+    max-width: 1260px;
+    width: auto;
+}
+
+.vitae b{
+    font-weight: 500;
+}
