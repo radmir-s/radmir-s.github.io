@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Inconsolata:100,200,300,400,500,600,700,900");
+/* @import url("https://fonts.googleapis.com/css?family=Inconsolata:100,200,300,400,500,600,700,900"); */
+/* @import url("https://fonts.googleapis.com/css?family=sans-serif:100,200,300,400,500,600,700,900"); */
 /* @import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,900"); */
 @import url("https://use.fontawesome.com/releases/v5.15.3/css/all.css");
 
@@ -8,7 +9,7 @@ body {
     padding: 0;
     background-color: white;
     /* font-family: Montserrat, Inconsolata, monospace, sans-serif;; */
-    font-family: Inconsolata;
+    font-family: sans-serif;
     font-size: 18px;
     font-weight: 300;
     line-height: 1.4;
@@ -20,7 +21,7 @@ a {
     color: inherit;
 }
 
-nav a{
+nav a {
     text-decoration: none;
 }
 
@@ -28,7 +29,7 @@ nav ul {
     margin: 0;
     padding: 0;
     list-style: none;
-    text-decoration: none; 
+    text-decoration: none;
 }
 
 
@@ -43,12 +44,13 @@ nav {
     justify-content: space-between;
     align-items: center;
     font-size: 25px;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 nav .name {
+    word-wrap: none;
     margin-left: 30px;
-    font-weight: 500;
+    font-weight: 300;
     color: white;
     font-size: 28px;
 }
@@ -65,11 +67,12 @@ nav .name {
 }
 
 .menu li a {
+    /* font-weight: 300; */
     color: white;
 }
 
 .menu li a:hover {
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .social {
@@ -93,10 +96,11 @@ nav .name {
 }
 
 .social a.fa-github {
+    color: #41414b;
+    background-color: white;
     position: relative;
-    top: 4px;
-    font-size: 38px;
-    padding: 3px;
+    top: 7px;
+    font-size: 45px;
 }
 
 /* Layout */
@@ -134,31 +138,6 @@ nav .name {
     grid-column: span 11;
 }
 
-@media (max-width: 991px) {
-    .dpic {
-        grid-column: span 12;
-        text-align: center;
-    }
-
-    nav {
-        font-size: 20px;
-    }
-    .menu li {
-        margin-right: 10px;
-    }
-
-    nav .name{
-        font-size: 25px;
-        margin-left: 20px;
-    }
-
-    .bio {
-        grid-column: span 12;
-        padding-top: 15px;
-        text-align: center;
-    }
-}
-
 .bio h1 {
     font-size: 28px;
     font-weight: 400;
@@ -173,13 +152,35 @@ nav .name {
     font-size: 18px;
     padding: 0;
     margin: 5px 0 10px 0;
+    max-width: 800px;
 }
 
-@media (min-width: 992px) {
-    .bio h2 {
-        max-width: 800px;
+@media (max-width: 991px) {
+    .dpic {
+        grid-column: span 12;
+        text-align: center;
+    }
+
+    nav {
+        font-size: 20px;
+    }
+
+    .menu li {
+        margin-right: 10px;
+    }
+
+    nav .name {
+        font-size: 25px;
+        margin-left: 20px;
+    }
+
+    .bio {
+        grid-column: span 12;
+        padding-top: 15px;
+        text-align: center;
     }
 }
+
 
 .dpic img {
     width: 200px;
@@ -200,7 +201,7 @@ hr {
     border: 0;
 }
 
-hr.thick{
+hr.thick {
     margin: 25px 0px 25px 0px;
 }
 
@@ -234,22 +235,6 @@ hr.thick{
     padding-top: 5px;
     padding-right: 10px;
     /* color: #6b5b5b; */
-}
-
-.hassets {
-    position: relative;
-}
-
-@media (max-width: 991px) {
-    .hassets {
-        display: none;
-    }
-}
-
-.hasset {
-    position: absolute;
-    margin: 0;
-    padding: 0;
 }
 
 .stitle {
@@ -296,16 +281,17 @@ hr.thick{
     }
 }
 
-.desc h3{
+.desc h3 {
     font-weight: 400;
     margin: 0;
 }
-.desc h3 strong{
+
+.desc h3 strong {
     font-weight: 500;
 }
 
 
-.vitae .desc ul{
+.vitae .desc ul {
     margin: 5px 0 5px 0;
     font-weight: 300;
     font-size: 16px;
@@ -313,7 +299,7 @@ hr.thick{
     list-style: disc;
 }
 
-.ico img{
+.ico img {
     border-radius: 25%;
 }
 
@@ -322,6 +308,27 @@ hr.thick{
     width: auto;
 }
 
-.vitae b{
+.vitae b {
     font-weight: 500;
+}
+
+a.lastname::before {
+    /* font-weight: 300; */
+    content: "Sultamuratov";
+}
+
+a.lastname:hover::before {
+    color: white;
+}
+
+@media (max-width: 991px) {
+    a.lastname::before {
+        content: "S";
+    }
+}
+
+#reveal {
+    background-color: transparent;
+    color: #41414b;
+    font-size: 16px;
 }
