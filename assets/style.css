@@ -130,13 +130,12 @@ nav .name {
 .container {
     margin-left: auto;
     margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    max-width: 1000px;
 }
 
-@media (min-width: 992px) {
+@media (max-width: 991px) {
     .container {
-        width: 970px;
+        max-width: 800px;
     }
 }
 
@@ -152,35 +151,23 @@ nav .name {
 
 .dpic {
     grid-column: span 1;
-    text-align: left;
+    text-align: center;
 }
 
 .bio {
     padding: 10px;
-    /* padding-left: 10px; */
-    grid-column: span 11;
-}
-
-.bio h1 {
-    font-size: 28px;
-    font-weight: 400;
-    padding: 0;
-    margin: 0;
+    grid-column: span 10;
 }
 
 .bio h2 {
     color: var(--main-color);
     font-size: 18px;
     font-weight: 300;
-    padding: 0;
-    margin: 5px 0 10px 0;
-    max-width: 800px;
 }
 
 @media (max-width: 991px) {
     .dpic {
         grid-column: span 12;
-        text-align: center;
     }
 
     nav {
@@ -201,6 +188,7 @@ nav .name {
         padding-top: 15px;
         text-align: center;
     }
+
 }
 
 
@@ -231,6 +219,7 @@ hr.thick {
     grid-column: span 1;
     vertical-align: top;
     position: relative;
+    padding-top: 5px;
 }
 
 .ico img {
@@ -246,17 +235,20 @@ hr.thick {
     vertical-align: top;
     font-size: 17px;
     padding-left: 20px;
-    padding-top: 5px;
+
     padding-bottom: 10px;
 }
 
 .timespan {
     grid-column: span 2;
-    /* font-size: 14px; */
     text-align: right;
-    padding-top: 5px;
-    padding-right: 10px;
-    /* color: #6b5b5b; */
+    padding-left: 5px;
+}
+
+@media (max-width: 991px) {
+    .timespan {
+        font-size: 16px;
+    }
 }
 
 .stitle {
@@ -267,22 +259,10 @@ hr.thick {
     margin-left: 10px;
 }
 
-@media (max-width: 768px) {
-    .cdesc {
-        font-size: 14px;
-        padding-bottom: 10px;
-    }
-}
-
 .desc h3 {
-    font-weight: 400;
+    font-weight: 300;
     margin: 0;
 }
-
-.desc h3 strong {
-    font-weight: 500;
-}
-
 
 .vitae .desc ul {
     margin: 5px 0 5px 0;
@@ -297,7 +277,7 @@ hr.thick {
 }
 
 .vitae .container {
-    max-width: 1260px;
+    max-width: 1200px;
     width: auto;
 }
 
@@ -306,12 +286,7 @@ hr.thick {
 }
 
 a.lastname::before {
-    /* font-weight: 300; */
     content: "Sultamuratov";
-}
-
-a.lastname:hover::before {
-    color: white;
 }
 
 @media (max-width: 991px) {
@@ -319,6 +294,11 @@ a.lastname:hover::before {
         content: "S";
     }
 }
+
+a.lastname:hover::before {
+    color: white;
+}
+
 
 #reveal {
     background-color: transparent;
