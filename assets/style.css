@@ -241,7 +241,6 @@ hr.thick {
 .vitae .desc {
     grid-column: span 9;
     vertical-align: top;
-    font-size: 16px;
     padding-left: 20px;
     padding-bottom: 10px;
 }
@@ -254,20 +253,24 @@ hr.thick {
 }
 
 @media (max-width: 991px) {
+    .vitae {
+        font-size: 16px;
+    }
+
     .vitae .desc {
         grid-column: span 8;
-        font-size: 14px;
         padding-left: 15px;
     }
 
-    .vitae .desc li{
-        font-size: 12px;
-    }
-    
-    .vitae .timespan {
-        grid-column: span 3;
+    .vitae .desc li {
         font-size: 14px;
     }
+
+    .vitae .timespan {
+        grid-column: span 3;
+        /* font-size: 14px; */
+    }
+
 }
 
 .stitle {
