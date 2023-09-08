@@ -96,6 +96,16 @@ nav .name {
     font-size: white;
 }
 
+.social a.fa-telegram {
+    color: var(--main-color);
+    background-color: white;
+    position: relative;
+    top: 7px;
+    font-size: 45px;
+    margin-left: -7px;
+    margin-right: 7px;
+}
+
 .social a.fa-github {
     color: var(--main-color);
     background-color: white;
@@ -119,6 +129,10 @@ nav .name {
 
 .social a.fa-youtube:hover {
     background-color: #c4302b;
+}
+
+.social a.fa-telegram:hover {
+    color: #229ED9;
 }
 
 .social a.fa-envelope:hover {
