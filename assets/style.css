@@ -76,6 +76,12 @@ nav .name {
     font-weight: 400;
 }
 
+.linelogo {
+    width: 32px;
+    height: 32px;
+    vertical-align: middle;
+}
+
 .social {
     padding-top: 5px;
     text-align: center;
