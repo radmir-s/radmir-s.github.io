@@ -186,14 +186,17 @@ nav .name {
 }
 
 .bio {
-    padding: 10px;
-    grid-column: span 10;
+    /* padding: 5px; */
+    padding-left: 15px;
+    padding-right: 15px;
+    grid-column: span 11;
 }
 
 .bio h2 {
     color: var(--main-color);
     font-size: 18px;
     font-weight: 300;
+    text-align: justify;
 }
 
 @media (max-width: 991px) {
@@ -216,7 +219,7 @@ nav .name {
 
     .bio {
         grid-column: span 12;
-        padding-top: 15px;
+        /* padding-top: 15px; */
         text-align: center;
     }
 
