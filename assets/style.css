@@ -164,6 +164,30 @@ nav .name {
     margin-right: 15px;
 }
 
+.epic img {
+    /* width: 200px;
+    height: 200px; 
+    border-radius: 35px; */
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    margin: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.epic2 img {
+    /* width: 200px;
+    height: 200px; 
+    border-radius: 35px; */
+    width: 200px;
+    height: 180px;
+    border-radius: 5px;
+    margin: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
 @media (max-width: 991px) {
     .container {
         max-width: 800px;
