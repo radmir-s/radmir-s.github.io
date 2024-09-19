@@ -209,6 +209,16 @@ nav .name {
     text-align: center;
 }
 
+.epic {
+    grid-column: span 1;
+    text-align: center;
+}
+
+.epic2 {
+    grid-column: span 1;
+    text-align: center;
+}
+
 .bio {
     /* padding: 5px; */
     padding-left: 15px;
@@ -225,6 +235,14 @@ nav .name {
 
 @media (max-width: 991px) {
     .dpic {
+        grid-column: span 12;
+    }
+
+    .epic {
+        grid-column: span 12;
+    }
+
+    .epic2 {
         grid-column: span 12;
     }
 
