@@ -168,22 +168,22 @@ nav .name {
     /* width: 200px;
     height: 200px; 
     border-radius: 35px; */
-    width: 200px;
-    height: 200px;
-    border-radius: 5px;
-    margin: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
+    width: 150px;
+    height: 150px;
+    /* border-radius: 5px; */
+    margin-top: 40px;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
 .epic2 img {
     /* width: 200px;
     height: 200px; 
     border-radius: 35px; */
-    width: 200px;
-    height: 180px;
+    width: 190px;
+    height: 160px;
     border-radius: 5px;
-    margin: 10px;
+    margin-top: 20px;
     margin-left: 10px;
     margin-right: 10px;
 }
